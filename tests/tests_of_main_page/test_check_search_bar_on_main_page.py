@@ -1,4 +1,4 @@
-def test_check_seach_bar_on_main_page(main_page):
+def test_check_search_bar_on_main_page(main_page):
     main_page.navigate()
     main_page.check_element_visibility(element=main_page.search_bar)
     main_page.search_bar.click()

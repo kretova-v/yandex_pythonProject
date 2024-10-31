@@ -13,10 +13,10 @@ class MainPage(BasePage):
          self.search_bar = page.get_by_placeholder("Найдётся всё")
          self.button_find = page.get_by_role("button", name="Найти")
          self.button_services = page.get_by_label("Сервисы")
-         self.lable_market = page.get_by_label("Маркет", exact=True)
+         self.label_market = page.get_by_label("Маркет", exact=True)
          self.button_enter = page.get_by_role("link", name="Войти")
          self.button_profile = page.get_by_label("Профиль, вход не выполнен")
-         self.button_mail = page.frame_locator("iframe >> nth=1").get_by_test_id("mail")
+
 
 
 
