@@ -18,8 +18,6 @@ class MainPage(BasePage):
          self.button_profile = page.get_by_label("Профиль, вход не выполнен")
 
 
-
-
     def navigate(self):
          self.page.goto(Url.YANDEX_URL, timeout=50000)
 
