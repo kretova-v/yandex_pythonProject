@@ -1,7 +1,7 @@
 
-from xml.sax.xmlreader import Locator
 
-from playwright.sync_api import Page, expect
+
+from playwright.sync_api import Page, expect, Locator
 
 
 class BasePage:
@@ -12,10 +12,10 @@ class BasePage:
         expect(element).to_be_visible(timeout=30000)
 
     def click_by_element(self, element: Locator):
-        element.click()
+        element.click(force=True)
 
     def check_current_url(self, url: str):
-        assert  url in self.page.url, "URL не соответствует"
+       expect(self.page).to_have_url(url)
 
 
 
