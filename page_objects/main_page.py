@@ -19,7 +19,7 @@ class MainPage(BasePage):
 
 
     def navigate(self):
-         self.page.goto(Url.YANDEX_URL, timeout=50000)
+         self.page.goto(Url.YANDEX_URL, timeout=45000)
 
 
 

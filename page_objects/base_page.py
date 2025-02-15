@@ -14,6 +14,7 @@ class BasePage:
     def click_by_element(self, element: Locator):
         element.click(force=True)
 
+
     def check_current_url(self, url: str):
        expect(self.page).to_have_url(url)
 
